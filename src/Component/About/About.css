@@ -1,0 +1,66 @@
+
+.about {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to multiple rows */
+    justify-content: center; /* Center the grid layout */
+    gap: 20px; /* Space between squares */
+    padding: 20px;
+    background-color: #2c2f33; /* Dark grey for background */
+    color: #f6f8fa; /* Light text for better readability */
+  }
+ 
+  .about-container {
+    flex: 1 1 250px; /* Fixed square width and height */
+    max-width: 250px;
+    max-height: 250px;
+    padding: 15px;
+    background-color: #23272a; /* Slightly lighter dark background */
+    border-radius: 8px; /* Rounded edges for aesthetics */
+    border: 3px solid #4caf50; /* Green border */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Depth effect */
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Stack content inside the square */
+    align-items: center; /* Center text horizontally */
+    justify-content: space-between; /* Space out content vertically */
+    text-align: center;
+  }
+  
+  .about-container h1 {
+    font-size: 1.2rem;
+    color: #4caf50; /* Green for section titles */
+    margin: 5px 0;
+  }
+  
+  .about-container p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #ddd; /* Softer white for paragraphs */
+  }
+  
+  /* Hover effect for squares */
+  .about-container:hover {
+    transform: scale(1.05); /* Slightly enlarge */
+    background-color: #1f2326; /* Darker background */
+    border-color: #b18ce2; /* Purple border on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
+  }
+  
+  /* Highlight key text */
+  .about-container p strong {
+    color: #b18ce2; /* Purple highlights */
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .about {
+      gap: 15px; /* Adjust spacing on smaller screens */
+    }
+  
+    .about-container {
+      flex: 1 1 100%; /* Full width for small screens */
+      max-width: 100%;
+      height: auto; /* Allow content height to expand */
+    }
+  }
+  

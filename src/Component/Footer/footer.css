@@ -1,0 +1,40 @@
+.footer {
+    background-color: #333; /* Dark background for footer */
+    color: white; /* White text for better contrast */
+    padding: 20px 10px; /* Padding for spacing */
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer p {
+    margin: 10px 0; /* Add spacing between text lines */
+    font-size: 14px; /* Standard font size */
+  }
+  
+  .social-links {
+    margin: 10px 0; /* Add spacing above and below the icons */
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+  }
+  
+  .social-links a {
+    color: white; /* Icon color */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .social-links a:hover {
+    color: #4CAF50; /* Highlighted color on hover */
+    transform: scale(1.2); /* Slightly enlarge on hover */
+  }
+  
+  .footer a {
+    color: #4CAF50; /* Highlight links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition */
+  }
+  
+  .footer a:hover {
+    color: #ff9800; /* Highlighted link color on hover */
+  }
+  

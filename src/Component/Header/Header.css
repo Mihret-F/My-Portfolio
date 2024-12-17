@@ -1,0 +1,71 @@
+.header {
+    background-color: #333; /* Dark background for the header */
+    color: white; /* White text color for better contrast */
+    padding: 10px 20px; /* Add padding to the header */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+  margin: 30px;
+}
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #d1e0d1; /* Highlighted text color for the title */
+  }
+  
+  nav ul {
+    list-style: none; /* Remove bullets from the list */
+    display: flex;
+    gap: 20px; /* Add space between the list items */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  
+  nav li {
+    font-size: 16px;
+  }
+  
+  nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* White text color for links */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover transitions */
+  }
+  
+  nav a:hover {
+    color: #4CAF50; /* Change link color on hover */
+    transform: scale(1.1); /* Slightly enlarge link on hover */
+  }
+  
+  nav a:active {
+    color: #ff9800; /* Change color on active state */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .header {
+      padding: 10px;
+    }
+  
+    nav ul {
+      flex-direction: column; /* Stack links vertically on smaller screens */
+      gap: 10px;
+    }
+  
+    nav a {
+      font-size: 14px; /* Reduce link size for smaller screens */
+    }
+  
+    h1 {
+      font-size: 20px; /* Adjust title size for smaller screens */
+    }
+    .ti h1{
+        color: #d1e0d1;
+        text-align: center;
+    }
+  }
+  

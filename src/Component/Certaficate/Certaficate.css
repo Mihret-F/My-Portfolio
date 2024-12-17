@@ -1,0 +1,66 @@
+.certificate-container {
+    padding: 20px;
+    background-color: #0c0c0c; /* Dark background for certificates */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .certificates {
+    display: flex;
+    flex-wrap: wrap; /* Ensure images wrap to new lines on smaller screens */
+    gap: 20px; /* Spacing between certificate sections */
+    max-width: 1200px; /* Restrict maximum container width */
+    margin: 0 auto; /* Center the container */
+    text-align: center;
+  }
+  
+  .certificates h2 {
+    width: 100%; /* Ensure heading takes full row */
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ece0e0;
+    margin-top: 10px;
+  }
+  
+  .certificate {
+    flex: 1 1 250px; /* Allow certificates to take up equal space */
+    max-width: 300px; /* Restrict maximum width */
+    display: flex;
+    flex-direction: column; /* Stack text and image vertically */
+    align-items: center; /* Center the content */
+    justify-content: space-between; /* Space out content */
+    text-align: center;
+  }
+  
+  .certificate h3 {
+    font-size: 18px;
+    color: #ece0e0;
+    margin-bottom: 10px;
+  }
+  
+  .certificate img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border: 12px solid #ddd; /* Light border for images */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    transition: transform 0.3s ease; /* Smooth scaling effect on hover */
+  }
+  
+  .certificate img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .certificates {
+      flex-direction: column; /* Stack the certificates vertically */
+      align-items: center;
+    }
+  
+    .certificate {
+      max-width: 100%; /* Allow full width on smaller screens */
+      margin-bottom: 20px; /* Space between certificates */
+    }
+  }
+  
