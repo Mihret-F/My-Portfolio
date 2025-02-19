@@ -3,7 +3,7 @@ import './Certaficate.css';
 import po from '../../Assert/cer.png';
 import po1 from '../../Assert/cer1.png';
 import po2 from '../../Assert/me.png';
-
+import po3 from '../../Assert/uda.png';
 export default function Certificate() {
   return (
     <div className="certificate-container">
@@ -20,6 +20,11 @@ export default function Certificate() {
         <div className="certificate">
           <h3>Certificate of Achievement in Leadership and Entrepreneurship</h3>
           <img src={po2} alt="Certificate 3" />
+        </div>
+        <div className="certificate">
+          <h3>Certificate of Achievement in Android Developer </h3>
+       
+          <img src={po3} alt="Certificate 3" />
         </div>
       </section>
     </div>

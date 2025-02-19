@@ -1,72 +1,80 @@
 .home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 70vh;
-    background-color: #2c2f33; /* Dark background */
-    color: #f6f8fa; /* Light text for readability */
-    text-align: center;
-    padding: 20px;
-    margin-top: 0px;
-  }
-  
-  .intro h1 {
-    font-size: 2.5rem;
-    color: #4caf50; /* Green highlight for main heading */
-    margin-bottom: 10px;
-  }
-  
-  .highlight {
-    color: #b18ce2; /* Purple text for emphasis */
-    font-weight: bold;
-  }
-  
-  .intro h2 {
-    font-size: 2rem;
-    margin: 10px 0;
-    color: #f57abd; /* Pinkish dynamic role text */
-  }
-  .image img{
-    width: 40%;
-    height: 35%;
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on small screens */
+  align-items: center;
+  justify-content: center;
+  background-color: #2c2f33; /* Dark background */
+  color: #f6f8fa; /* Light text */
+  padding: 20px;
 }
+
+/* Profile Image Styling */
+.image {
+  flex: 1; /* Take 1 part of the available space */
+  display: flex;
+  justify-content: center;
+}
+
+.image img {
+  width: 400px; /* Adjust size */
+  height: 500px;
+  border-radius: 0%; /* Circular image */
+  border: 10px solid #c4c7f1;
+  object-fit: cover;
+}
+
+/* Introduction Section */
+.intro {
+  flex: 2;
+  text-align: left;
+  padding-left: 30px;
+  max-width: 600px; /* Prevents stretching on large screens */
+}
+
+.intro h1 {
+  font-size: 2rem;
+  color: #4caf50;
+}
+
+.highlight {
+  color: #b18ce2;
+  font-weight: bold;
+}
+
+.dynamic-text span {
+  color: #f72c09;
+  font-size: 1.8rem;
+}
+
+.intro h3 {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ddd;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .image {
+    margin-bottom: 20px;
+  }
+
+  .intro {
+    padding-left: 0;
+    text-align: center;
+  }
+
   .dynamic-text span {
-    font-weight: bold;
-    animation: text-rotate 8s infinite;
+    font-size: 1.5rem;
   }
-  
+
   .intro h3 {
-    font-size: 1.3rem;
-    line-height: 1.6;
-    margin-top: 30px;
-    color: #ddd;
-    margin-left: 60px;
-
+    font-size: 1rem;
   }
-
-  /* Text animation for role rotation */
-  @keyframes text-rotate {
-    0% { content: 'Frontend Developer'; }
-    25% { content: 'Backend Developer'; }
-    50% { content: 'Fullstack Developer'; }
-    75% { content: 'Pen Tester'; }
-    100% { content: 'Frontend Developer'; }
-  }
-  
-  /* Responsive Design */
-  @media screen and (max-width: 768px) {
-    .intro h1 {
-      font-size: 1.8rem;
-    }
-  
-    .intro h2 {
-      font-size: 1.5rem;
-    }
-  
-    .intro p {
-      font-size: 0.9rem;
-    }
-    
-   
-  }
+}
